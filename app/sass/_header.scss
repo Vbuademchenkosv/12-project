@@ -1,0 +1,249 @@
+.background {
+    position: relative;
+    border-radius: 0 0 12px 12px;
+    background: linear-gradient(228.57deg, $bg 11.93%, $bg 57.17%, $back 87.46%);
+
+    .container {
+        position: relative;
+    }
+}
+
+.background::after {
+    content: '';
+    height: 10px;
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    right: 20px;
+    background-color: $bg-af;
+}
+
+.background::before {
+    content: '';
+    height: 10px;
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    right: 40px;
+    background-color: $bg-bef;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: min-content min-content;
+    z-index: 2;
+
+    &__data {
+        grid-column: span 2;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -15px;
+        padding: 10px 15px;
+        background: $bg-rg;
+    }
+
+    &__adress {
+        display: none;
+    }
+
+    &__phone {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $white;
+        text-decoration: none;
+    }
+
+    &__fb {
+        display: none;
+    }
+
+    &__logo-box {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+}
+
+.lang {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+
+    & a {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 5px 7px;
+        text-align: center;
+        letter-spacing: 1px;
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 8px;
+        display: block;
+    }
+
+    & a.active {
+        color: $white;
+        background: $pink;
+    }
+
+    & a:not(.active):hover {
+        background: $how;
+    }
+}
+
+.menu {
+    &__btn {
+        cursor: pointer;
+        background-image: url('../img/burger.svg');
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        border: none;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    &__list {
+        display: none;
+    }
+}
+
+.adventeges {
+    height: 500px;
+}
+
+@media (min-width: 768px) {
+    .header {
+        grid-template-rows: repeat(3, min-content);
+        grid-template-columns: 1fr;
+
+
+        &__data {
+            grid-column: 1;
+            justify-content: flex-start;
+            align-items: center;
+            background: none;
+        }
+
+        &__logo img {
+            width: 130px;
+            height: 60px;
+        }
+
+        &__adress {
+            display: inline-flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            color: $white;
+        }
+
+        &__adress::before,
+        &__adress::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: $point;
+            border-radius: 50%;
+            margin-right: 6px;
+            margin-left: 6px;
+        }
+
+        &__fb::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: $point;
+            border-radius: 50%;
+            margin-right: 6px;
+            margin-left: 6px;
+        }
+
+        &__fb {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        &__fb:hover svg path {
+            fill: $accent;
+        }
+    }
+
+    .menu {
+        &__btn {
+            display: none;
+        }
+
+        &__list {
+            display: flex;
+            padding-left: 0;
+            padding-bottom: 5px;
+            list-style: none;
+        }
+
+        &__list li {
+            padding-right: 30px;
+
+            & a {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: right;
+                color: $white;
+                text-decoration: none;
+
+            }
+
+            & a.active {
+                color: $accent;
+                border-bottom: 2px solid;
+            }
+
+            & a:not(.active):hover {
+                border-bottom: 2px solid;
+            }
+        }
+
+    }
+}
+
+@media (min-width: 992px) {
+
+    .header {
+        grid-template-rows: repeat(2, min-content);
+        grid-template-columns: min-content 1fr;
+
+
+        &__data {
+            grid-column: 2;
+            justify-content: flex-end;
+        }
+
+        &__logo-box {
+            grid-row: 1 / -1;
+        }
+    }
+
+    .menu {
+        justify-self: end;
+
+        &__list li {
+            padding-right: 0;
+            padding-left: 30px;
+        }
+    }
+}

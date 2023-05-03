@@ -1,0 +1,95 @@
+.service {
+    padding-bottom: 60px;
+    margin-bottom: 50px;
+}
+
+.link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $link;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+}
+
+.link::after {
+    content: url('../img/vector.svg');
+    position: absolute;
+    left: 86px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    background: linear-gradient(90.13deg, $accent 0.84%, $pink-lt 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    gap: 30px;
+}
+
+.list {
+    height: 100%;
+
+    &__icon {
+        width: 92px;
+        height: 92px;
+        background: $white;
+        border-radius: 24px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        color: $link;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $white;
+    }
+}
+
+@media (min-width: 768px) {
+    .service {
+        margin-bottom: 80px;
+    }
+
+    .card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .card {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+}
+
+@media (min-width: 1200px) {
+    .card {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+
+}

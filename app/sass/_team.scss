@@ -1,0 +1,52 @@
+.command {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background: $man;
+}
+
+
+.team {
+    padding: 30px;
+
+    &__speech {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        background: linear-gradient(90.13deg, $pink 0.84%, $pink-lt 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
+
+    &__sign {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $gray;
+        padding-bottom: 6px;
+    }
+
+    &__position {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: $gray;
+    }
+}
+
+@media (min-width: 768px) {}
+
+
+@media (min-width: 992px) {
+    .command {
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media (min-width: 1200px) {}

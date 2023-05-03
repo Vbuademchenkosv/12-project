@@ -1,0 +1,45 @@
+.legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 600px;
+    background: url('../img/symbol.svg') no-repeat center top;
+    background-size: auto 100%;
+    margin: 0 -30px;
+    padding: 0 15px;
+
+    &__about {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: $white;
+    }
+
+    &__scroll {
+        position: absolute;
+        left: calc(50% - 21px);
+        bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .legal {
+        min-height: 1024px;
+        background-size: auto 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .legal {
+        min-height: 768px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .legal {
+        min-height: 800px;
+    }
+}
