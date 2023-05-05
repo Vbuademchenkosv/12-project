@@ -1,7 +1,154 @@
-.partner {
-    &__hillel {
-        width: 375px;
-        height: 120px;
-        background: red;
+.associate {
+    display: flex;
+    justify-content: center;
+
+    &__already {
+        text-transform: uppercase;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #323264;
     }
 }
+
+.partner {
+    display: grid;
+    grid-template-columns: fr;
+    grid-template-rows: repeat(12, 120px);
+}
+
+.par {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+.partner-hil {
+    background: #1C4280;
+}
+
+.hillel {
+    width: 217px;
+    height: 48px;
+}
+
+.partner-wan {
+    background: #143646;
+}
+
+.wannabiz {
+    width: 199px;
+    height: 32px;
+}
+
+.partner-tag {
+    background: #F48B30
+}
+
+.targerine {
+    width: 179px;
+    height: 44px;
+}
+
+.partner-dl {
+    background: #9E4DC3;
+}
+
+.dlook {
+    width: 180px;
+    height: 42px;
+}
+
+.partner-oran {
+    background: #FD9339;
+}
+
+.orangear {
+    width: 174px;
+    height: 44px;
+}
+
+.partner-adt {
+    background: #E2E2E4;
+}
+
+.adtelligent {
+    width: 132px;
+    height: 48px;
+}
+
+.partner-clic {
+    background: #C71C36;
+}
+
+.clickky {
+    width: 138px;
+    height: 61px;
+}
+
+.partner-leas {
+    background: #DCF3F9;
+}
+
+.leasing {
+    width: 146px;
+    height: 76px;
+}
+
+.partner-ingr {
+    background: #EAEAEA;
+}
+
+.ingratek {
+    width: 146px;
+    height: 76px;
+}
+
+.partner-city {
+    background: #282240;
+}
+
+.city-par {
+    width: 181px;
+    height: 38px;
+}
+
+.partner-art {
+    background: #1D4568;
+}
+
+.artprint {
+    width: 189px;
+    height: 46px;
+}
+
+.partner-ult {
+    background: #000000;
+}
+
+.ultimatecard {
+    width: 152px;
+    height: 95px;
+}
+
+@media (min-width: 768px) {
+    .partner {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .partner {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {}

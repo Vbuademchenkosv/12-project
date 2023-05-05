@@ -4,11 +4,8 @@
     grid-template-rows: 1fr;
     background: $man;
 }
-
-
 .team {
     padding: 30px;
-
     &__speech {
         font-style: normal;
         font-weight: 700;
@@ -21,7 +18,6 @@
         padding-top: 5px;
         padding-bottom: 30px;
     }
-
     &__sign {
         font-style: normal;
         font-weight: 700;
@@ -30,7 +26,6 @@
         color: $gray;
         padding-bottom: 6px;
     }
-
     &__position {
         font-weight: 400;
         font-size: 14px;
@@ -38,15 +33,11 @@
         color: $gray;
     }
 }
-
 @media (min-width: 768px) {}
-
-
 @media (min-width: 992px) {
     .command {
         grid-template-columns: 1fr auto;
         grid-template-rows: 1fr;
     }
 }
-
 @media (min-width: 1200px) {}
