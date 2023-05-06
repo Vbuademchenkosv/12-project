@@ -1,0 +1,44 @@
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footline {
+    background: #E6E6F0;
+    height: 2px;
+    margin-bottom: 30px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.llc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B3B3BA;
+}
+
+.footfb {
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.phone {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #46466E;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+
+    .contact {
+        align-items: baseline;
+    }
+}

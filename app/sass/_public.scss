@@ -1,3 +1,7 @@
+.bg {
+    background: #F5F5FA;
+}
+
 .equity-link {
     font-weight: 700;
     font-size: 14px;
@@ -18,31 +22,6 @@
     left: 126px;
 }
 
-.public {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 30px;
-}
-
-.equity {
-    // align-items: center;
-    // width: 100%;
-    // height: 100%;
-    // padding-bottom: 30px;
-
-    img {
-        width: 100%;//
-        height: 200px;//
-    }
-}
-
-.equity__card {
-    // padding-left: 30px;
-    // padding-right: 30px;
-    padding: 30px;
-}
-
 .title {
     font-weight: 700;
     font-size: 38px;
@@ -51,33 +30,49 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;//??
 }
 
-.caption {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: #24A3FF;
-    // padding-top: 30px;
-    padding-bottom: 15px;
+.public {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
 }
 
-.date {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #B3B3BA;
-    margin-bottom: 15px;//
-}
+.equity {
+    img {
+        width: 100%;
+        height: 200px;
+    }
 
-.line {
-    background: #E6E6F0;
-    height: 4px;
-    margin-bottom: 15px;
-    //margin-top: 15px;
+    .equity__card {
+        padding: 30px;
+        background: #FFFFFF;
+    }
+
+    .caption {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #24A3FF;
+        padding-bottom: 15px;
+    }
+
+    .date {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #B3B3BA;
+        margin-bottom: 15px;
+    }
+
+    .line {
+        background: #E6E6F0;
+        height: 4px;
+        margin-bottom: 15px;
+    }
 }
 
 

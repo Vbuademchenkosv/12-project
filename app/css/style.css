@@ -663,6 +663,10 @@
     grid-template-rows: 1fr 1fr 1fr;
   }
 }
+.bg {
+  background: #F5F5FA;
+}
+
 .equity-link {
   font-weight: 700;
   font-size: 14px;
@@ -685,6 +689,16 @@
   left: 126px;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .public {
   display: grid;
   grid-template-columns: 1fr;
@@ -696,31 +710,18 @@
   width: 100%;
   height: 200px;
 }
-
-.equity__card {
+.equity .equity__card {
   padding: 30px;
+  background: #FFFFFF;
 }
-
-.title {
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 46px;
-  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
-.caption {
+.equity .caption {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #24A3FF;
   padding-bottom: 15px;
 }
-
-.date {
+.equity .date {
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
@@ -729,8 +730,7 @@
   color: #B3B3BA;
   margin-bottom: 15px;
 }
-
-.line {
+.equity .line {
   background: #E6E6F0;
   height: 4px;
   margin-bottom: 15px;
@@ -752,6 +752,58 @@
   }
   .public .fff {
     grid-column: span 1;
+  }
+}
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footline {
+  background: #E6E6F0;
+  height: 2px;
+  margin-bottom: 30px;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.llc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B3B3BA;
+}
+
+.footfb {
+  text-decoration: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.phone {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #46466E;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 /*# sourceMappingURL=style.css.map */
